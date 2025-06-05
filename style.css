@@ -1,159 +1,272 @@
 .container {
+    background-color: rgb(44, 68, 60);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px;
+    margin: 20px 0;
+    gap: 20px;
+    border-radius: 16px;
 }
 
 .text-span {
+    color: #ff005c;
+    font-size: 20px;
+    margin: 20px 0;
 }
 
 .caja {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1rem;
 }
+
 
 /* Translate */
 
 /*Creamos la animación*/
-@keyframes translateX {
+@keyframes translate_animation_X {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
+
+
 /*Usamos la animación*/
-.translateX {
+.clase_de_animation {
+    animation: translate_animation_X 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes translateY {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(20px);
+    }
 }
 
 /*Usamos la animación*/
 .translateY {
+    animation: translateY 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes translate {
+    0% {
+        transform: translate(0);
+    }
+
+    100% {
+        transform: translate(100%, 20px);
+    }
 }
 
 /*Usamos la animación*/
 .translate {
+    animation: translate 2s infinite;
 }
 
 /* Rotate */
 
 /*Creamos la animación*/
-@keyframes rotate {
+@keyframes rotate_positive {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+
+    }
 }
 
 /*Usamos la animación*/
 .rotate {
+    animation: rotate_positive 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes rotate-negative {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+
+    }
 }
 
 /*Usamos la animación*/
 .rotate-negative {
+    animation: rotate-negative 2s infinite;
 }
 
 /* Scale */
 
 /*Creamos la animación*/
 @keyframes scaleX {
+    0% {
+        transform: scaleX(1);
+    }
+
+    100% {
+        transform: scaleX(1.1);
+    }
 }
 
 /*Usamos la animación*/
 .scaleX {
+    animation: scaleX 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes scaleY {
+    0% {
+        transform: scaleY(1);
+    }
+
+    100% {
+        transform: scaleY(1.1);
+    }
 }
 
 /*Usamos la animación*/
 .scaleY {
+    animation: scaleY 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(1.1);
+    }
 }
 
 /*Usamos la animación*/
 .scale {
+    animation: scale 2s infinite;
 }
 
 /* Skew */
 
 /*Creamos la animación*/
 @keyframes skewX {
+    0% {
+        transform: skewX(0deg);
+    }
+
+    100% {
+        transform: skewX(10deg);
+    }
 }
 
 /* Usamos la animación */
 .skewX {
+    animation: skewX 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes skewY {
+    0% {
+        transform: skewy(0deg);
+    }
+
+    100% {
+        transform: skewy(10deg);
+    }
 }
 
 /* Usamos la animación */
 .skewY {
+    animation: skewY 2s infinite;
 }
 
 /*Creamos la animación*/
 @keyframes skew {
+    0% {
+        transform: skew(0deg);
+    }
+
+    100% {
+        transform: skew(10deg);
+    }
 }
 
 /* Usamos la animación */
 .skew {
+    animation: skew 2s infinite;
 }
 
 /* transition */
 .transition-duration {
+    transition-property: all;
+    transition-duration: 1s;
+    cursor: pointer;
 }
 
 .transition-duration:hover {
+    background-color: aqua;
+    width: 250px;
 }
 
 /* transition timing function */
 
 .transition-timing {
+    transition-property: all;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    text-align: center;
+    padding: 0.5rem;
+    cursor: pointer;
 }
 
 .transition-timing:hover {
+    background-color: black;
+    width: 220px;
+    transform: rotate(10deg);
 }
 
 /* transition timing delay*/
-.transition-delay {
-}
+.transition-delay {}
 
-.transition-delay:hover {
-}
+.transition-delay:hover {}
 
 /* transition shorthand */
-.transition-shorthand {
-}
-.transition-shorthand:hover {
-}
+.transition-shorthand {}
 
-@keyframes moverCaja {
-}
+.transition-shorthand:hover {}
 
-.animada {
-}
+@keyframes moverCaja {}
 
-.infinita {
-}
+.animada {}
 
-.alternada {
-}
+.infinita {}
 
-.delay {
-}
+.alternada {}
 
-.timing {
-}
+.delay {}
 
-.paused:hover {
-}
+.timing {}
 
-.animation-shorthand {
-}
+.paused:hover {}
 
-.animation-shorthand:hover {
-}
+.animation-shorthand {}
+
+.animation-shorthand:hover {}
